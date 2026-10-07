@@ -106,6 +106,34 @@ export const EnergyManagerPanel: React.FC = () => {
         </div>
       </div>
 
+      {/* Energy Intelligence Center Visual Hero Banner */}
+      <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-800 bg-slate-950 h-44 sm:h-52 flex items-end">
+        <img
+          src="/assets/energy_analytics_center.jpg"
+          alt="Energy Intelligence Analytics Center"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+        <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 text-white">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Badge variant="blue" size="sm">Energy Intelligence Hub</Badge>
+              <span className="text-[11px] text-blue-300 font-mono">48-Hour ML Forecast Active</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white">
+              Substation Load Profiling & Automated Shaving
+            </h2>
+            <p className="text-xs text-slate-300 max-w-xl mt-0.5">
+              Continuous 24-submeter demand profiling, AI anomaly evidence dossiers, and automated curtailment dispatch.
+            </p>
+          </div>
+          <div className="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-700 text-xs">
+            <span className="w-2 h-2 rounded-full bg-blue-400 live-pulse-dot" />
+            <span className="font-semibold text-slate-200">Load Factor: 0.95 PF Nominal</span>
+          </div>
+        </div>
+      </div>
+
       {/* Energy Telemetry KPIs */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard

@@ -93,6 +93,34 @@ export const TenantPanel: React.FC = () => {
         </div>
       </div>
 
+      {/* Tenant Suite Visual Hero Banner */}
+      <div className="relative rounded-3xl overflow-hidden shadow-xl border border-amber-900/30 bg-slate-950 h-44 sm:h-52 flex items-end">
+        <img
+          src="/assets/tenant_suite_portal.jpg"
+          alt="Tenant Private Suite Energy Portal"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+        <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 text-white">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Badge variant="warning" size="sm">Private Tenant Suite Portal</Badge>
+              <span className="text-[11px] text-amber-300 font-mono">End-to-End Tenant Isolation</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white">
+              {user?.organization_name || 'Apex Technologies'} Energy Management
+            </h2>
+            <p className="text-xs text-slate-300 max-w-xl mt-0.5">
+              Dedicated sub-meter breakdown, environmental HVAC controls, and private utility invoicing.
+            </p>
+          </div>
+          <div className="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 rounded-xl border border-amber-500/30 text-xs">
+            <span className="w-2 h-2 rounded-full bg-amber-400 live-pulse-dot" />
+            <span className="font-semibold text-slate-200">Thermostat: In Range (22.5°C)</span>
+          </div>
+        </div>
+      </div>
+
       {/* Tenant Suite KPIs */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard

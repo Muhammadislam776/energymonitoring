@@ -92,6 +92,34 @@ export const SuperAdminPanel: React.FC = () => {
         </div>
       </div>
 
+      {/* Super Admin Control Room Visual Hero Banner */}
+      <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-800 bg-slate-950 h-44 sm:h-52 flex items-end">
+        <img
+          src="/assets/super_admin_hub.jpg"
+          alt="Super Admin Enterprise Control Room"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+        <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 text-white">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Badge variant="purple" size="sm">Enterprise Operations Room</Badge>
+              <span className="text-[11px] text-purple-300 font-mono">SOC 2 Type II Encrypted</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white">
+              Global Tenant & Infrastructure Matrix
+            </h2>
+            <p className="text-xs text-slate-300 max-w-xl mt-0.5">
+              Live multi-tenant partition monitoring, PostgREST cloud database synchronization, and user privileges.
+            </p>
+          </div>
+          <div className="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-700 text-xs">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 live-pulse-dot" />
+            <span className="font-semibold text-slate-200">Grid Telemetry: Synchronized</span>
+          </div>
+        </div>
+      </div>
+
       {/* Global Executive KPIs */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard

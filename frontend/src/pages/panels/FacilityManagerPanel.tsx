@@ -119,6 +119,34 @@ export const FacilityManagerPanel: React.FC = () => {
         </div>
       </div>
 
+      {/* Facility Operations Center Visual Hero Banner */}
+      <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-800 bg-slate-950 h-44 sm:h-52 flex items-end">
+        <img
+          src="/assets/facility_ops_center.jpg"
+          alt="Facility Engineering Operations Center"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+        <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 text-white">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Badge variant="healthy" size="sm">Central Plant Engineering</Badge>
+              <span className="text-[11px] text-emerald-300 font-mono">120 Mechanical Units Tracked</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white">
+              Chiller Plant & Fleet Asset Operations
+            </h2>
+            <p className="text-xs text-slate-300 max-w-xl mt-0.5">
+              Live vibration monitoring, bearing temperature logging, and dispatching work orders to field teams.
+            </p>
+          </div>
+          <div className="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-700 text-xs">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 live-pulse-dot" />
+            <span className="font-semibold text-slate-200">Building Automation: Online</span>
+          </div>
+        </div>
+      </div>
+
       {/* Operations Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
