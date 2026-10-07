@@ -1,0 +1,22 @@
+{
+  "name": "digital-twin-energy-monitoring-dashboard",
+  "version": "1.0.0",
+  "description": "Digital Twin Energy Monitoring Platform (EnergyTwin)",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "seed": "npm --prefix backend run seed",
+    "start": "npm --prefix backend run start"
+  },
+  "keywords": [
+    "digital-twin",
+    "energy-monitoring",
+    "smart-building",
+    "iot",
+    "energy-management"
+  ],
+  "author": "Google DeepMind / Antigravity",
+  "license": "MIT"
+}
